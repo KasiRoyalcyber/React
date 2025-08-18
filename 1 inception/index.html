@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <title>React</title>
+</head>
+
+<body>
+    <div id="root">
+        <!-- h1 tag using html -->
+        <h1>Hello World!!!</h1>
+    </div>
+
+    <!-- create h1 tag using JS -->
+    <script>
+        const Heading = document.createElement("h1");
+        Heading.innerHTML = "Hello World using JS"
+
+        const root = document.getElementById('root');
+        root.appendChild(Heading);
+    </script>
+
+    <!-- injecting react into the project using CDN -->
+
+     <!-- core react framework algorithm -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- react lib useful for DOM operation -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- create h1 tag using react -->
+    <script src="./App.js">
+        // const HeadingReact = React.createElement("h1", "", "Hello World from react!!!");
+        // const rootEle = ReactDOM.createRoot(document.getElementById("root"));
+        // rootEle.render(HeadingReact);
+    </script>
+</body>
+
+</html>
