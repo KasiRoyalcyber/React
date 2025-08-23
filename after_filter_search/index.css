@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav-items {
+    padding:  0px 20px;
+}
+
+.nav-items > ul {
+    font-size: 24px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card {
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+}
+
+.res-card:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.search {
+    padding: 10px
+}
+
+.res-logo {
+    width: 100%;
+}
+
+.filter-btn {
+ margin: 10px;
+ cursor: pointer;
+}
+
+.filter {
+    display: flex;
+}
+
+/* res card */
+
+.res-card {
+  width: 250px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; /* Fixed height for uniformity */
+  box-sizing: border-box;
+}
+
+.res-logo {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.res-name {
+  font-size: 18px;
+  margin: 10px 0 4px;
+  min-height: 24px; /* ensure height is reserved even for shorter names */
+}
+
+.res-cuisines {
+  font-size: 14px;
+  color: #666;
+  min-height: 38px; /* ensures all cuisine text blocks are the same height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; limit to 2 lines
+  -webkit-box-orient: vertical; */
+}
+
+.res-rating {
+  font-weight: bold;
+  margin-top: auto; /* push rating to the bottom */
+  font-size: 14px;
+}

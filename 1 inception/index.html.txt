@@ -1,0 +1,44 @@
+my ref:
+
+npm:
+
+std repo for all the packages. any packages req for the project
+
+when you make create react app, automatically npm will be inside it.
+
+do npm init
+
+package.json:
+
+^ and ~ in this (carat , tilde)
+carat - parcel will upgrade to minor version automatically
+tilde - major version automatically
+
+it is the configuration for npm
+this packages also known as dependencies
+npm manages that in the package.json
+
+
+impt package is bundler - bundles the app (shift to production)
+
+CRA - uses webpack bundler.
+here we use parcel - npm install -D parcel (two dependency are there. 1. dev 2. normal)
+1. dev - req for development phase
+2. normal - used in production
+
+
+package-lock.json:
+
+keep track of exact version of the package
+integrity - hash  (keep track of all the versions of dependencies)
+
+
+node_module:
+
+contain all the code that we fetch from npm
+collection of dependencies
+
+
+
+
+
