@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
+import { Link } from "react-router-dom";
 
 
 const MyCode = () => {
@@ -64,12 +65,10 @@ const MyCode = () => {
                 {/* filter with rating ends */}
             </div>
 
-
-
             <div className="res-container">
                 {
                     filteredRes.map((res) => (
-                        <RestaurantCard key={res.id} resData={res} />
+                        <Link key={res.id} to={"/restaurant/" + res.id}> <RestaurantCard resData={res} /> </Link>
                     ))
                 }
 
