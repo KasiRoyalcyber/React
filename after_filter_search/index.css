@@ -5,7 +5,7 @@
 }
 
 .logo {
-    width: 200px;
+    width: 100px;
 }
 
 .nav-items {
@@ -99,4 +99,10 @@
   font-weight: bold;
   margin-top: auto; /* push rating to the bottom */
   font-size: 14px;
+}
+
+.user-card {
+    padding: 10px;
+    border: 1px solid black;
+    /* width: 200px; */
 }
