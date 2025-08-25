@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 const MyCode = () => {
@@ -25,6 +26,11 @@ const MyCode = () => {
         setListOfRes(restaurants);
         setFilteredRes(restaurants);
 
+    }
+
+    const isOnline = useOnlineStatus();
+    if(!isOnline){
+        return <h1>🔴 Offline, Please check your internet connection!!</h1>
     }
 
     return (
